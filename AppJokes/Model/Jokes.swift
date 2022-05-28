@@ -2,7 +2,7 @@
 //  Jokes.swift
 //  AppJokes
 //
-//  Created by Mariana Eri Massaki on 28/05/22.
+//  Created by Mariana Eri Massaki on 26/05/22.
 //
 
 import Foundation

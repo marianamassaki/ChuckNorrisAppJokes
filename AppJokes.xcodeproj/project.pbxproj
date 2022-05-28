@@ -13,6 +13,7 @@
 		F92113FF284201AA009F9830 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92113FE284201AA009F9830 /* Jokes.swift */; };
 		F92114022842026A009F9830 /* JokeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92114012842026A009F9830 /* JokeName.swift */; };
 		F921140628420335009F9830 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F921140528420335009F9830 /* Service.swift */; };
+		F9211409284208E8009F9830 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9211408284208E8009F9830 /* ApiManager.swift */; };
 		F96BCFC1283EA0E100F0C596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BCFC0283EA0E100F0C596 /* AppDelegate.swift */; };
 		F96BCFC3283EA0E100F0C596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BCFC2283EA0E100F0C596 /* SceneDelegate.swift */; };
 		F96BCFC5283EA0E100F0C596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BCFC4283EA0E100F0C596 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		F92113FE284201AA009F9830 /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
 		F92114012842026A009F9830 /* JokeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeName.swift; sourceTree = "<group>"; };
 		F921140528420335009F9830 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F9211408284208E8009F9830 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		F96BCFBD283EA0E100F0C596 /* AppJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96BCFC0283EA0E100F0C596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96BCFC2283EA0E100F0C596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		F9211404284202FD009F9830 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F9211408284208E8009F9830 /* ApiManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F92114022842026A009F9830 /* JokeName.swift in Sources */,
+				F9211409284208E8009F9830 /* ApiManager.swift in Sources */,
 				F921140628420335009F9830 /* Service.swift in Sources */,
 				F96BCFC5283EA0E100F0C596 /* ViewController.swift in Sources */,
 				F96BCFC1283EA0E100F0C596 /* AppDelegate.swift in Sources */,
