@@ -5,7 +5,6 @@
 //  Created by Mariana Eri Massaki on 28/05/22.
 //
 
-// import Foundation
 import Alamofire
 
 class ApiManager {
@@ -42,9 +41,9 @@ class ApiManager {
         
     }
     
-    func getSearchJokes(completion: @escaping (JokeName?, Bool) -> Void) {
+    func getSearchJokes(filterName: String, completion: @escaping (JokeName?, Bool) -> Void) {
         
-        let url = "https://api.chucknorris.io/jokes/search?query={query}"
+        let url = "https://api.chucknorris.io/jokes/search?query=\(filterName)"
         
         AF.request(url).response { response in
             
@@ -69,7 +68,4 @@ class ApiManager {
         }
         
     }
-    
-    
-    
 }

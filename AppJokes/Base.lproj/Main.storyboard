@@ -43,6 +43,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedMyBuscarPiadaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2uz-TT-grc"/>
+                                    <segue destination="uDO-bK-bGg" kind="show" identifier="SearchViewController" id="5oA-rH-LxW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,7 +74,6 @@
                         <outlet property="imagemHome" destination="47Z-pP-Bu2" id="MKm-LP-8uJ"/>
                         <outlet property="piadaHome" destination="4WM-9p-BYf" id="Ieq-M8-Di1"/>
                         <outlet property="shuffleButton" destination="ygq-7X-GGs" id="5NI-gb-IPP"/>
-                        <segue destination="uDO-bK-bGg" kind="show" identifier="SearchViewController" id="Y7H-B8-xbH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

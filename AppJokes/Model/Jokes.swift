@@ -15,17 +15,9 @@ class Jokes: Codable {
     let value: String?
     
     init(icon_url: String?, id: String?, url: String?, value: String?) {
-        
         self.icon_url = icon_url
         self.id = id
         self.url = url
         self.value = value
     }
 }
-
-
-//"icon_url" : "https://assets.chucknorris.host/img/avatar/chuck-norris.png",
-//"id" : "F0Iph6K_SUG-sgLu4d4GbA",
-//"url" : "https://api.chucknorris.io/jokes/F0Iph6K_SUG-sgLu4d4GbA",
-//"value" : "The 'Fifty Shades of Grey' trilogy is loosly based on Chuck Norris' prepubescent years."
-//}

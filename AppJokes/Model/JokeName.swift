@@ -13,7 +13,6 @@ class JokeName: Codable {
     let result: [Jokes]
     
     init(total: Int?, result: [Jokes]) {
-        
         self.total = total
         self.result = result
     }

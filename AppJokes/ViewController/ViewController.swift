@@ -19,21 +19,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func tappedMyShufflerButton(_ sender: UIButton) {
-        
         getJoke()
     }
     
-    @IBAction func tappedMyBuscarPiadaButton(_ sender: UIButton) {
+    @IBAction func tappedMyBuscarPiadaButton(_ sender: UIButton) {}
         
-        performSegue(withIdentifier: "SearchViewController", sender: self)
-    }
-        
-    
-    
     func getJoke() {
             
             apiManager.getRandonJokes { (result, hasData) in
@@ -43,7 +36,6 @@ class ViewController: UIViewController {
                         
                         self.joke = result
                         self.piadaHome.text = self.joke?.value
-       //                 print(self.joke?.icon_url)
                         
                     }else{
                         print("mostrar erro pro usuario")
@@ -59,5 +51,3 @@ class ViewController: UIViewController {
         
     }
     
-
-

@@ -25,7 +25,6 @@ class SearchViewController: UIViewController {
         self.myTableView.dataSource = self
         self.searchPiada.delegate = self
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -34,7 +33,7 @@ class SearchViewController: UIViewController {
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     
@@ -42,7 +41,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = self.filterJoke[indexPath.row]
+        cell.textLabel?.text = ""
         
         return cell
 
@@ -50,8 +49,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectJoke = self.filterJoke[indexPath.row]
-        performSegue(withIdentifier: "PiadaViewController", sender: selectJoke)
+        performSegue(withIdentifier: "PiadaViewController", sender: nil)
 
     }
     
@@ -71,55 +69,14 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
     
-        
-        
-        
-//    self.filterJoke = []
-//
-//    if searchText.isEmpty{
-//        self.filterJoke = self.words
-//    }else {
-//
-//        for value in {
-//            if value.uppercased().contains(searchText.uppercased()){
-//                self.filterJoke.append(value)
-//            }
-//        }
-//    }
-//    self.myTablewView.reloadData()
 }
 
 
 func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     
-    
-    getJoke()
- //   searchBar.resignFirstResponder()
-}
-    func getJoke() {
-            
-            apiManager.getRandonJokes { (result, hasData) in
-                if hasData{
-                    
-                    if let result = result {
-                        
-                        self.joke = result
-                        self.searchPiada.text = self.joke?.value
-                        print(self.joke?.icon_url)
-                        
-                    }else{
-                        print("mostrar erro pro usuario")
-                    }
-                }else{
-                    
-                    print("Mostrar erro pro usuario")
-                }
-                
-            }
-            
-        }
-    
 }
 
-
-
+        
+       
+    
+}
