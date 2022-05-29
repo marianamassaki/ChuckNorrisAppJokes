@@ -43,6 +43,7 @@
                                 </state>
                                 <connections>
                                     <action selector="tappedMyBuscarPiadaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2uz-TT-grc"/>
+                                    <segue destination="uDO-bK-bGg" kind="show" identifier="SearchViewController" id="5oA-rH-LxW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,7 +74,6 @@
                         <outlet property="imagemHome" destination="47Z-pP-Bu2" id="MKm-LP-8uJ"/>
                         <outlet property="piadaHome" destination="4WM-9p-BYf" id="Ieq-M8-Di1"/>
                         <outlet property="shuffleButton" destination="ygq-7X-GGs" id="5NI-gb-IPP"/>
-                        <segue destination="uDO-bK-bGg" kind="show" identifier="SearchViewController" id="Y7H-B8-xbH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -98,7 +98,7 @@
                                 <rect key="frame" x="0.0" y="227" width="414" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="NNF-oT-Hpp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="NNF-oT-Hpp">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NNF-oT-Hpp" id="q5t-9P-vr9">
@@ -131,8 +131,8 @@
                     <navigationItem key="navigationItem" id="W0Z-5c-Es3"/>
                     <connections>
                         <outlet property="labelSearch" destination="xk2-xD-FZ8" id="cjh-ZK-ZW9"/>
+                        <outlet property="myTableView" destination="Sla-5K-PLb" id="PwO-kf-wDQ"/>
                         <outlet property="searchPiada" destination="cWV-U6-kwa" id="TC0-eW-FXt"/>
-                        <outlet property="tableVIew" destination="Sla-5K-PLb" id="PwO-kf-wDQ"/>
                         <segue destination="7NN-nB-513" kind="show" identifier="PiadaViewController" id="5tk-4g-SDC"/>
                     </connections>
                 </viewController>

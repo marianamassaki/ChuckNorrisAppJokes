@@ -10,6 +10,9 @@
 		E87258A1E07FA6430FF463AD /* Pods_AppJokes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE851EF7901E47118EE432D /* Pods_AppJokes.framework */; };
 		F92113F62841FACA009F9830 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92113F52841FACA009F9830 /* SearchViewController.swift */; };
 		F92113F92841FB10009F9830 /* PiadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92113F82841FB10009F9830 /* PiadaViewController.swift */; };
+		F92113FF284201AA009F9830 /* Jokes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92113FE284201AA009F9830 /* Jokes.swift */; };
+		F92114022842026A009F9830 /* JokeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92114012842026A009F9830 /* JokeName.swift */; };
+		F9211409284208E8009F9830 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9211408284208E8009F9830 /* ApiManager.swift */; };
 		F96BCFC1283EA0E100F0C596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BCFC0283EA0E100F0C596 /* AppDelegate.swift */; };
 		F96BCFC3283EA0E100F0C596 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BCFC2283EA0E100F0C596 /* SceneDelegate.swift */; };
 		F96BCFC5283EA0E100F0C596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BCFC4283EA0E100F0C596 /* ViewController.swift */; };
@@ -24,6 +27,9 @@
 		BBE851EF7901E47118EE432D /* Pods_AppJokes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppJokes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92113F52841FACA009F9830 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F92113F82841FB10009F9830 /* PiadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiadaViewController.swift; sourceTree = "<group>"; };
+		F92113FE284201AA009F9830 /* Jokes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jokes.swift; sourceTree = "<group>"; };
+		F92114012842026A009F9830 /* JokeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeName.swift; sourceTree = "<group>"; };
+		F9211408284208E8009F9830 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		F96BCFBD283EA0E100F0C596 /* AppJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96BCFC0283EA0E100F0C596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F96BCFC2283EA0E100F0C596 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F92113FC28420153009F9830 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F96BCFC4283EA0E100F0C596 /* ViewController.swift */,
+				F92113F52841FACA009F9830 /* SearchViewController.swift */,
+				F92113F82841FB10009F9830 /* PiadaViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F92113FD28420175009F9830 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F92113FE284201AA009F9830 /* Jokes.swift */,
+				F92114012842026A009F9830 /* JokeName.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9211404284202FD009F9830 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F9211408284208E8009F9830 /* ApiManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F96BCFB4283EA0E100F0C596 = {
 			isa = PBXGroup;
 			children = (
@@ -84,11 +117,11 @@
 		F96BCFBF283EA0E100F0C596 /* AppJokes */ = {
 			isa = PBXGroup;
 			children = (
+				F9211404284202FD009F9830 /* Network */,
+				F92113FD28420175009F9830 /* Model */,
 				F96BCFC0283EA0E100F0C596 /* AppDelegate.swift */,
 				F96BCFC2283EA0E100F0C596 /* SceneDelegate.swift */,
-				F96BCFC4283EA0E100F0C596 /* ViewController.swift */,
-				F92113F52841FACA009F9830 /* SearchViewController.swift */,
-				F92113F82841FB10009F9830 /* PiadaViewController.swift */,
+				F92113FC28420153009F9830 /* ViewController */,
 				F96BCFC6283EA0E100F0C596 /* Main.storyboard */,
 				F96BCFC9283EA0E600F0C596 /* Assets.xcassets */,
 				F96BCFCB283EA0E600F0C596 /* LaunchScreen.storyboard */,
@@ -211,10 +244,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92114022842026A009F9830 /* JokeName.swift in Sources */,
+				F9211409284208E8009F9830 /* ApiManager.swift in Sources */,
 				F96BCFC5283EA0E100F0C596 /* ViewController.swift in Sources */,
 				F96BCFC1283EA0E100F0C596 /* AppDelegate.swift in Sources */,
 				F92113F92841FB10009F9830 /* PiadaViewController.swift in Sources */,
 				F92113F62841FACA009F9830 /* SearchViewController.swift in Sources */,
+				F92113FF284201AA009F9830 /* Jokes.swift in Sources */,
 				F96BCFC3283EA0E100F0C596 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
