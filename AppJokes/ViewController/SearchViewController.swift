@@ -64,6 +64,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.numberOfLines = 0
         cell.textLabel?.text = self.arrayResult[indexPath.row].value
         
+        
         return cell
     }
     

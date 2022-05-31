@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getJoke()
-        shuffleButton.layer.cornerRadius = 10
+        shuffleButton.layer.cornerRadius = 20
     }
     
     @IBAction func tappedMyShufflerButton(_ sender: UIButton) {
