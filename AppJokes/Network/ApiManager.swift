@@ -34,11 +34,8 @@ class ApiManager {
                     
                     completion(nil, false)
                 }
-                
             }
-            
         }
-        
     }
     
     func getSearchJokes(filterName: String, completion: @escaping (JokeName?, Bool) -> Void) {

@@ -19,9 +19,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getJoke()
+        shuffleButton.layer.cornerRadius = 10
     }
     
     @IBAction func tappedMyShufflerButton(_ sender: UIButton) {
+    
         getJoke()
     }
     
@@ -44,10 +47,6 @@ class ViewController: UIViewController {
                     
                     print("Mostrar erro pro usuario")
                 }
-                
             }
-            
         }
-        
     }
-    

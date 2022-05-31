@@ -12,15 +12,13 @@ class PiadaViewController: UIViewController {
     @IBOutlet weak var labelPiadaDetail: UILabel!
     @IBOutlet weak var imagemDetail: UIImageView!
     
-    var jokeDetail: String?
+    var jokeDetail: Jokes?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.labelPiadaDetail.text = jokeDetail ?? ""
-        
-        // Do any additional setup after loading the view.
+        if let joke = jokeDetail {
+            self.labelPiadaDetail.text = joke.value
+        }
     }
-    
-
 }
